@@ -156,7 +156,7 @@ function showEditStudentForm(id, name, courseId) {
     document.getElementById('studentForm').style.display = 'block';
     document.getElementById('studentForm').innerHTML = 
         `<input type="text" id="studentName" value="${name}" placeholder="Student Name">
-         <select id="courseSelect"></select>
+         <select id="courseSelect"> </select>
          <button onclick="editStudent(${id})">Save</button>`;
     populateCourseSelect(courseId);
 }
